@@ -1,0 +1,13 @@
+ind = 1; 
+jeff = 2 * p
+for x = (-2 * pi):(2.15 * pi)
+    SincHold(ind) = MySinc(x);
+    SinHold(ind) = sinc(x);
+    ind = ind + 1;
+end
+
+base = -2 * pi : 2.15 * pi;
+plot(base,SincHold);
+hold on
+plot(base,SinHold);
+hold off
